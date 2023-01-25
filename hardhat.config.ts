@@ -96,10 +96,10 @@ const config: HardhatUserConfig = {
     },
     hardhat: {
       forking: {
-        enabled: process.env.FORKING === "true",
-        url: `https://eth-mainnet.alchemyapi.io/v2/${process.env.ALCHEMY_API_KEY}`,
-        blockNumber: 13000000,
+        enabled: true,
+        url: `http://127.0.0.1:7546`,
       },
+      gasPrice: 43831793130,
       allowUnlimitedContractSize: true,
       live: false,
       saveDeployments: false,

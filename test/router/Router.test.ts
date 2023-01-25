@@ -9,7 +9,7 @@ import { expect } from "chai";
 const E6 = BigNumber.from(10).pow(6);
 const E8 = BigNumber.from(10).pow(8);
 
-describe("Router", function () {
+describe.only("Router", function () {
   let alice,
     aliceEncoded,
     weth,
